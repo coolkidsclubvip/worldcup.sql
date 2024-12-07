@@ -1,0 +1,9 @@
+                                    Table "public.teams"
+ Column  |       Type        | Collation | Nullable |                Default                 
+---------+-------------------+-----------+----------+----------------------------------------
+ team_id | integer           |           | not null | nextval('teams_team_id_seq'::regclass)
+ name    | character varying |           |          | 
+Indexes:
+    "teams_pkey" PRIMARY KEY, btree (team_id)
+    "teams_name_key" UNIQUE CONSTRAINT, btree (name)
+
